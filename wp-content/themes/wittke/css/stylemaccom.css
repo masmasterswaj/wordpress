@@ -1,0 +1,1768 @@
+/* ######################################################################################################################
+
+Style dla motywu MACCOM
+v. 1.01
+(c) 2016
+
+Style responsywne dla rozdzielczosci:
+1000px i wiecej
+767px - 999px
+575px - 999px - dla konstruktorow elementow pod banerem
+488px - 574px - dla konstruktorow elementow pod banerem
+487px - 280px
+
+
+SPIS TRESCI
+ [0] - Zmiana tla strony dla wersji mobilnej
+ [1] - Tytul i logo - style związane z tytulem strony i logiem oraz polozeniem wszystkich elementow
+ [2] - Menu strony - glowne menu strony w banerze
+ [3] - Zawartosc karuzeli pod banerem
+ [4] - Style dla zawartości nad bannerem
+ [5] - Efekt parallaxy - style uruchamiajace dzialanie parallaxy
+ [6] - Zawartosc karuzeli w parallaxie
+ [7] - Style wspolne dla menu
+ [8] - Slider jssor - style glowne - dla oferty
+ [9] - Style dla przycisków typu Button
+[10] - Style dla wyswietlanego kontekstu na stronie glownej
+[11] - Tresc wyswietlanych postow - style dla postow - strona glowna
+[12] - Formularz dla search()
+[13] - Style dla footer
+[14] - Style dla formularzy - ogólne
+[15] - Style dla strony OFERTA
+[16] - Style dla pojedynczej strony SINGLE
+[17] - Paginacja strony i jej style
+[18] - Style dla slideshow w ofercie
+#########################################################################################################################
+*/
+/*### [0] TLO STRONY ##################################################################################################*/
+@media (min-width: 290px) and (max-width: 765px) {
+
+        /*-- Zmiana tla dla strony mobilnej ---------------------------------------------------------------------------*/
+        body.custom-background {
+            background: #1b090a;
+        }
+    }
+
+/*### [1] TYTUL STRONY ################################################################################################*/
+@media (min-width: 1000px) {
+     /*-- Glowny kontener dla strony -------------------------------------------------------------------------------*/
+        .container {
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 1000px;
+            margin: 0px auto;
+        }
+        /*-- Logo strony ----------------------------------------------------------------------------------------------*/
+        #logo {
+            width: 120px;
+            height: 110px;
+            background-image: url(../images/logowittke1.png);
+            background-repeat: no-repeat;
+            float: right;
+            margin: 10px 10px 10px 10px;
+        }
+        /*-- Tytul strony internetowej --------------------------------------------------------------------------------*/
+        #tytul {
+            width: 70%;
+            height: auto;
+            float: left;
+            margin-top: 20px;
+            margin-bottom: -5px;
+        }
+        .tytultext1 {
+            font-family: Cienka;
+            font-size: 60px;
+            color:#b88980;
+            line-height: 65px;
+            float: left;
+        }
+        .tytultext2 {
+            font-family: Normalna;
+            font-size: 42px;
+            color:#d7482b;
+            line-height: 65px;
+            float: left;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+    }
+@media (min-width: 767px) and (max-width: 999px) {
+
+        /*-- Glowny kontener dla strony -------------------------------------------------------------------------------*/
+        .container {
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 100%;
+        }
+        .podbaner {
+            width: 100%;
+            height: auto;
+        }
+        /*-- Logo strony ----------------------------------------------------------------------------------------------*/
+        #logo {
+            width: 120px;
+            height: 110px;
+            background-image: url(../images/logowittke1.png);
+            background-repeat: no-repeat;
+            float: right;
+            margin: 10px 10px 10px 10px;
+        }
+        /*-- Tytul strony internetowej --------------------------------------------------------------------------------*/
+        #tytul {
+            width: 70%;
+            height: auto;
+            float: left;
+            margin-top: 25px;
+        }
+        .tytultext1 {
+            font-family: Cienka;
+            font-size: 60px;
+            color:#b88980;
+            line-height: 65px;
+            float: left;
+        }
+        .tytultext2 {
+            font-family: Normalna;
+            font-size: 42px;
+            color:#d7482b;
+            line-height: 65px;
+            float: left;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+    }
+@media (min-width: 290px) and (max-width: 765px) {
+    /*-- Glowny kontener dla strony -------------------------------------------------------------------------------*/
+        .container {
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 100%;
+            background: #1b090a;
+        }
+    /*-- Logo strony ----------------------------------------------------------------------------------------------*/
+         #logo {
+            width: 120px;
+            height: 110px;
+            background-image: url(../images/logowittke1.png);
+            background-repeat: no-repeat;
+            margin: 10px 10px 10px 10px;
+        }
+        /*-- Tytul strony internetowej --------------------------------------------------------------------------------*/
+        #tytul {
+            height: auto;
+            float: left;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            line-height: 30px;
+        }
+        .tytultext1 {
+            font-family: Cienka;
+            font-size: 35px;
+            color:#b88980;
+            margin-top: -10px;
+            padding: 0px 0px 0px 20px;
+            margin-left: 5px;
+        }
+        .tytultext2 {
+            font-family: Normalna;
+            font-size: 20px;
+            color:#d7482b;
+            margin-top: -10px;
+            margin-left: 5px;
+        }
+}
+
+/*### [2] MENU #######################################################################################################*/
+@media (min-width: 1000px) {
+    /* --- Polozenie menu i style  odpowiedzialne za menu ---------------------------------------------------------*/
+         .nav.navbar-nav {
+            float: left;
+        }
+        .menu {
+            width: 100%;
+            background: #402526;
+        }
+        .menuG {
+            margin: 0px auto;
+            #position: absolute;
+            width: 1000px;
+            background: #402526;
+        }
+        .navbar-nav .open .dropdown-menu > li > a {
+            padding: 10px 65px 10px 20px;
+        }
+        .navbar-nav .open .dropdown-menu {
+                background: transparent;
+        }
+        /* Polozenie i kolor menu */
+        .navbar-collapse.collapse {
+            position: absolute;
+            top: 100px;
+            margin-left: -35px;
+            z-index: 1000;
+            background: #402526;
+        }
+    }
+@media (min-width: 767px) and (max-width: 999px) {
+    /* --- Polozenie menu i style  odpowiedzialne za menu ---------------------------------------------------------*/
+        .navbar-nav .open .dropdown-menu {
+                background: transparent;
+            }
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+            padding: 10px 65px 10px 20px;
+        }
+        #menu {
+            width: 100%;
+            margin: 0px auto;
+            position: fixed;
+            position:relative;
+        }
+    /* --- Polozenie menu i style  odpowiedzialne za menu ---------------------------------------------------------*/
+        .nav.navbar-nav {
+            float: left;
+        }
+        .menu {
+            width: 100%;
+            background: #402526;
+        }
+        .menuG {
+            margin: 0px auto;
+            #position: absolute;
+            width: 1000px;
+            background: #402526;
+        }
+        .navbar-nav .open .dropdown-menu > li > a {
+            padding: 10px 65px 10px 20px;
+        }
+        .navbar-nav .open .dropdown-menu {
+                background: transparent;
+        }
+        /* Polozenie i kolor menu */
+        .navbar-collapse.collapse {
+            position: absolute;
+            top: 100px;
+            margin-left: -35px;
+            z-index: 1000;
+            background: #402526;
+        }
+
+    }
+
+@media (min-width: 290px) and (max-width: 765px) {
+    /* Kolor i polozenie menu rozwijanego dla strony mobilnej -----------------------------------------------------*/
+        .navbar-toggle {
+            border: 0px;
+            margin-top: 90px;
+            margin-right: 30px;
+            background-color: #d8482b;
+        }
+        .icon-bar {
+            color: #fff;
+        }
+
+        /* --- Polozenie menu i style  odpowiedzialne za menu ---------------------------------------------------------*/
+        #menu {
+            width: 100%;
+            margin: 0px auto;
+        }
+        .navbar-collapse {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .nav.navbar-nav {
+            width: 100%;
+            margin: 0px;
+        }
+        .collapse.in {
+            width: 100%;
+        }
+        .nav.navbar-nav {
+            float: left;
+        }
+        .navbar-nav .open .dropdown-menu {
+            padding-top: 10px;
+            background: #250f10;
+        }
+        .navbar-default .navbar-collapse {
+            border: 0px;
+            width: 100%;
+            background: #2c1112;
+        }
+        .navbar-nav .open .dropdown-menu > li > a {
+            line-height: 30px;
+            padding: 5px 15px 5px 40px;
+        }
+        .navbar-default .navbar-nav > li > a {
+            padding: 15px 40px;
+        }
+        .dropdown {
+            border: 1px dotted #4d302b;
+        }
+    }
+
+/*### [3] ZAWARTOSC POD BANEREM #######################################################################################*/
+@media (min-width: 1000px) {
+    /* Wiersz pod banerem ----------------------------------------------------------------------------------*/
+
+        .col-md-4a:link .podbanerTresc {
+            color: #c6afaa;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+
+        .col-md-4a:hover .podbanerTresc {
+            color: #fff;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .col-md-4a {
+            width: 31.5%;
+            height: 500px;
+            #border: 1px solid #482525;
+            text-align: justify;
+            padding: 20px;
+            cursor: pointer;
+            float: left;
+        }
+        .col-md-4a h2 {
+            color: #c6afaa;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .col-md-4a:hover h2 {
+            color: #fff;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .kolumna1, .kolumna2, .kolumna3 {
+            font-size: 16px;
+            margin:20px 10px 0px 8px;
+            color: #c6afaa;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        /*261213 331315 421417*/
+        .kolumna1 {
+            background-color: #372424;
+        }
+        .kolumna2 {
+            background-color: #3c191a;
+        }
+        .kolumna3 {
+            background-color: #1c0e0e;
+        }
+        .kolumna1:hover {
+            background-color: #421417;
+        }
+        .kolumna2:hover {
+            background-color: #421417;
+        }
+        .kolumna3:hover {
+            background-color: #421417;
+        }
+        .kolumna1:hover, .kolumna2:hover, .kolumna3:hover {
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .podbanerImg {
+            width: 274px;
+            height: 150px;
+            margin: 20px 0px 20px 0px;
+            background-position: center;
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            filter: grayscale(100%);
+
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .col-md-4a:hover .podbanerImg {
+            width: 274px;
+            height: 200px;
+            margin: 20px 0px 20px 0px;
+            background-position: center;
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            -o-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            filter: grayscale(0%);
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .podbanerTresc {
+            color: #c6afaa;
+            margin-bottom: 20px;
+        }
+        /* Style dla artykulu -----------------------------------------------------------------------------------------*/
+        .artykulImg {
+            width: 300px;
+            height: 150px;
+            margin: 20px 0px 20px 0px;
+            background-position:center;
+        }
+        .artykulKont > h2 {
+            color: #c6afaa;
+        }
+        .artykulKont {
+            background-color: #332220;
+            padding: 30px;
+            margin-left: -28px;
+            margin: 10px 0px 10px -28px;
+        }
+        /* Glowny kontener z artykulami */
+        #content {
+            margin-top: 0px;
+        }
+}
+@media (min-width: 767px) and (max-width: 999px) {
+
+        .podbaner {
+            width: 100%;
+            height: auto;
+        }
+    }
+@media (min-width: 575px) and (max-width: 999px) {
+        /* Wiersz pod banerem ----------------------------------------------------------------------------------*/
+
+        .col-md-4a:link .podbanerTresc {
+            color: #c6afaa;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+
+        .col-md-4a:hover .podbanerTresc {
+            color: #fff;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .col-md-4a {
+            width: 100%;
+            height: auto;
+            #border: 1px solid #482525;
+            text-align: justify;
+            padding: 20px;
+            cursor: pointer;
+        }
+        .col-md-4a h2 {
+            color: #c6afaa;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+            margin: 0px;
+        }
+        .col-md-4a:hover h2 {
+            color: #ff3d16;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .kolumna1, .kolumna2, .kolumna3 {
+            font-size: 18px;
+            margin:10px 0px 10px 0px;
+            color: #c6afaa;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        /*261213 331315 421417*/
+        .kolumna1 {
+            background-color: #331b1c;
+        }
+        .kolumna2 {
+            background-color: #281415;
+        }
+        .kolumna3 {
+            background-color: #1c0e0e;
+        }
+        .kolumna1:hover {
+            background-color: #421417;
+        }
+        .kolumna2:hover {
+            background-color: #421417;
+        }
+        .kolumna3:hover {
+            background-color: #421417;
+        }
+        .kolumna1:hover, .kolumna2:hover, .kolumna3:hover {
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .podbanerImg {
+            width: 274px;
+            height: 150px;
+            margin: 20px 30px 20px 0px;
+            background-position: center;
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            filter: grayscale(100%);
+            float: left;
+            display: block;
+
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .col-md-4a:hover .podbanerImg {
+            width: 274px;
+            height: 200px;
+            margin: 20px 30px 20px 0px;
+            background-position: center;
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            -o-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            filter: grayscale(0%);
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .podbanerTresc {
+            display: block;
+            padding:30px;
+            color: #c6afaa;
+        }
+        .podbanerClear{
+            clear: both;
+        }
+    }
+@media (min-width: 488px) and (max-width: 574px) {
+        /* Wiersz pod banerem ----------------------------------------------------------------------------------*/
+
+        .col-md-4a:link .podbanerTresc {
+            color: #c6afaa;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+
+        .col-md-4a:hover .podbanerTresc {
+            color: #fff;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .col-md-4a {
+            width: 100%;
+            height: auto;
+            text-align: justify;
+            padding: 30px;
+            cursor: pointer;
+        }
+        .col-md-4a h2 {
+            color: #c6afaa;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+            margin: 0px;
+        }
+        .col-md-4a:hover h2 {
+            color: #ff3d16;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .kolumna1, .kolumna2, .kolumna3 {
+            margin:10px 0px 10px 0px;
+            color: #c6afaa;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        /*261213 331315 421417*/
+        .kolumna1 {
+            background-color: #331b1c;
+        }
+        .kolumna2 {
+            background-color: #281415;
+        }
+        .kolumna3 {
+            background-color: #1c0e0e;
+        }
+        .kolumna1:hover {
+            background-color: #421417;
+        }
+        .kolumna2:hover {
+            background-color: #421417;
+        }
+        .kolumna3:hover {
+            background-color: #421417;
+        }
+        .kolumna1:hover, .kolumna2:hover, .kolumna3:hover {
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .podbanerImg {
+            width: 150px;
+            height: 150px;
+            margin: 20px 30px 20px 0px;
+            float: left;
+            background-position: center;
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            filter: grayscale(100%);
+
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .col-md-4a:hover .podbanerImg {
+            width: 150px;
+            height: 150px;
+            margin: 20px 30px 20px 0px;
+            background-position: center;
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            -o-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            filter: grayscale(0%);
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .podbanerTresc {
+            display: block;
+            padding-bottom: 10px;
+            color: #c6afaa;
+            font-size: 18px;
+        }
+        .podbanerClear{
+            clear: both;
+        }
+    }
+@media (min-width: 290px) and (max-width: 487px) {
+        /* Wiersz pod banerem ----------------------------------------------------------------------------------*/
+
+        .col-md-4a:link .podbanerTresc {
+            color: #c6afaa;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+
+        .col-md-4a:hover .podbanerTresc {
+            color: #fff;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .col-md-4a {
+            width: 100%;
+            height: auto;
+            #border: 1px solid #482525;
+            text-align: justify;
+            padding: 30px;
+            cursor: pointer;
+        }
+        .col-md-4a h2 {
+            color: #c6afaa;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+            margin: 0px;
+        }
+        .col-md-4a:hover h2 {
+            color: #ff3d16;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .kolumna1, .kolumna2, .kolumna3 {
+            margin:10px 0px 10px 0px;
+            color: #c6afaa;
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        /*261213 331315 421417*/
+        .kolumna1 {
+            background-color: #331b1c;
+        }
+        .kolumna2 {
+            background-color: #281415;
+        }
+        .kolumna3 {
+            background-color: #1c0e0e;
+        }
+        .kolumna1:hover {
+            background-color: #421417;
+        }
+        .kolumna2:hover {
+            background-color: #421417;
+        }
+        .kolumna3:hover {
+            background-color: #421417;
+        }
+        .kolumna1:hover, .kolumna2:hover, .kolumna3:hover {
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .podbanerImg {
+            width: 255px;
+            height: 150px;
+            margin: 20px 30px 20px 0px;
+            background-position: center;
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            filter: grayscale(100%);
+
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .col-md-4a:hover .podbanerImg {
+            width: 255px;
+            height: 150px;
+            margin: 20px 30px 20px 0px;
+            background-position: center;
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            -o-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            filter: grayscale(0%);
+            -webkit-transition: all 300ms ease-out;
+            -moz-transition: all 300ms ease-out;
+            -ms-transition: all 300ms ease-out;
+            -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+        }
+        .podbanerTresc {
+            display: block;
+            padding-bottom: 10px;
+            color: #c6afaa;
+            font-size: 18px;
+        }
+        .podbanerClear{
+            clear: both;
+        }
+        .podbaner {
+            width: 100%;
+            height: auto;
+        }
+    }
+ /*### [4] NAD BANEREM ############################################################################################*/
+    .navbar-header {
+        float: none;
+    }
+ /*### [5] STYLE DLA EFEKTU PARALLAXY ############################################################################*/
+    /* Parallax - style zwiazane z parallaxem ---------------------------------------------------------------------*/
+@media (min-width: 1000px) {
+        .parallaxIn {
+            max-width: 1000px;
+            margin: -6px auto;
+            background-color: rgba(35, 20, 18, 0);
+            height: 460px;
+        }
+        section.module.parallax {
+            height: 460px;
+        }
+    }
+@media (min-width: 290px) and (max-width: 999px) {
+        .parallaxIn {
+            max-width: 1000px;
+            margin: -20px auto;
+            background-color: rgba(35, 20, 18, 0);
+            height: 550px;
+            overflow: hidden;
+        }
+        section.module.parallax {
+            height: 550px;
+        }
+    }
+    .parallaxIn .btn {
+        top: 279px;
+        left: 12px;
+        position: relative;
+    }
+    .parallaxIn h2 {
+        padding: 28px 0px 0px 20px;
+        font-family: Normalna;
+        font-size: 37px;
+        color: #c6afaa;
+    }
+    .parallaxIn h2:hover {
+        color: #f63912;
+    }
+    .parallaxIn .ofertaText {
+        padding: 0px 0px 0px 20px;
+        font-size: 18px;
+        color: #c6afaa;
+    }
+    section.module.parallax h1 {
+        font-size: 96px;
+    }
+    section.module.parallax {
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+    section.module.parallax-1 {
+      background-image: url(../images/tloglowna2.jpg);
+    }
+/*### [6] STYLE DLA ZAWARTOSCI PARALLAXY ##############################################################################*/
+
+    /* Oferta - style dla oferty w parallax -----------------------------------------------------------------------*/
+    .ofertaImg {
+        width: 300px;
+        height: 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .ofertaTxt h3 {
+        padding: 0px 0px 0px 70px;
+        margin: 0px;
+        font-family: Cienka;
+        font-size: 25px;
+        color: #fff;
+    }
+    .parallax-opis {
+        margin: 0px 0px 0px 70px;
+        font-family: Cienka;
+        font-size: 14px;
+        color: #c6afaa;
+    }
+    .parallax-wyr  {
+        margin: 2px 0px 0px 70px;
+        font-family: Pogrubiona;
+        font-size: 20px;
+        color: #f63912;
+    }
+/*### [7] STYLE WSPOLNE DLA MENU ######################################################################################*/
+    /* Menu -----------------------------------------------------------------------------------------------------*/
+    /* Ustawienia nagłówka strony - kolor nagłówka, obramowanie czcionka i położenie ----------------------------*/
+    .navbar.navbar-default {
+      color: rgba(184, 136, 128, 0);
+      font-weight: 200;
+      margin-bottom: 0;
+      margin-top: -2px;
+    }
+    /* Kolor aktywnego elementu podmenu -------------------------------------------------------------------------*/
+    .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a {
+        background-color: #602014;
+        border-color: #602014;
+    }
+    /* Kolor aktywnego elementu gornego menu -------------------------------------------------------------------*/
+    .navbar-default .navbar-nav > .active > a {
+        background-color: #602014;
+        border-color: #602014;
+    }
+    /* Kolor otwartego elementu gornego menu -------------------------------------------------------------------*/
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus, {
+        background-color: rgba(69, 23, 14, 0.5);
+        border-color: #45170e;
+    }
+ /*### [8] STYLE SLIDERA OFERTY ##############################################################################*/
+    /*  SLIDER JSSOR - style dla slidera ------------------------------------------------------------------------------*/
+    /*
+    .jssorb03 div           (normal)
+    .jssorb03 div:hover     (normal mouseover)
+    .jssorb03 .av           (active)
+    .jssorb03 .av:hover     (active mouseover)
+    .jssorb03 .dn           (mousedown)
+    */
+    .jssorb03 {
+        position: absolute;
+    }
+    .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+        position: absolute;
+        /* size of bullet elment */
+        width: 21px;
+        height: 21px;
+        text-align: center;
+        line-height: 21px;
+        color: white;
+        font-size: 12px;
+        background: url('../imgages/b03.png') no-repeat;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .jssorb03 div { background-position: -5px -4px; }
+    .jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
+    .jssorb03 .av { background-position: -65px -4px; }
+    .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
+
+    /* jssor slider arrow navigator skin 03 css */
+    /*
+    .jssora03l                  (normal)
+    .jssora03r                  (normal)
+    .jssora03l:hover            (normal mouseover)
+    .jssora03r:hover            (normal mouseover)
+    .jssora03l.jssora03ldn      (mousedown)
+    .jssora03r.jssora03rdn      (mousedown)
+    */
+    .jssora03l, .jssora03r {
+        display: block;
+        position: absolute;
+        /* size of arrow element */
+        width: 55px;
+        height: 55px;
+        cursor: pointer;
+        background: url('../images/a12c.png') no-repeat;
+        overflow: hidden;
+    }
+    .jssora03l { background-position: -3px -33px;  margin-top: 100px; margin-left: 700px;}
+    .jssora03r { background-position: -63px -33px; margin-top: 100px;}
+    .jssora03l:hover { background-position: -123px -33px; }
+    .jssora03r:hover { background-position: -183px -33px; }
+    .jssora03l.jssora03ldn { background-position: -243px -33px; }
+    .jssora03r.jssora03rdn { background-position: -303px -33px; }
+/*### [9] STYLE DLA PRZYCISKOW ORAZ PRZYCISKU WYSZUKIWANIA ############################################################*/
+    .btn, #searchsubmit {
+        background: #c4462d;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+          user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: #bdafaa;
+        }
+    .btn:focus,
+    .btn:active:focus,
+    .btn.active:focus,
+    .btn.focus,
+    .btn:active.focus,
+    .btn.active.focus,
+    #searchsubmit:focus,
+    #searchsubmit:active:focus,
+    #searchsubmit.active:focus,
+    #searchsubmit.focus,
+    #searchsubmit:active.focus,
+    #searchsubmit.active.focus{
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+    .btn:hover,
+    .btn:focus,
+    .btn.focus,
+    #searchsubmit:hover,
+    #searchsubmit:focus,
+    #searchsubmit.focus{
+        color: #fff;
+        text-decoration: none;
+        background: #84281a;
+    }
+    .btn:active,
+    .btn.active,
+    #searchsubmit:active,
+    #searchsubmit.active{
+        background-image: none;
+        outline: 0;
+        -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    }
+    .btn.disabled,
+    .btn[disabled],
+    fieldset[disabled] .btn {
+        cursor: not-allowed;
+        filter: alpha(opacity=65);
+        -webkit-box-shadow: none;
+          box-shadow: none;
+        opacity: .65;
+    }
+/*### [10] STYLE DLA WYSWIETLANEGO KONTEKSTU NA STRONIE ###############################################################*/
+
+
+    /* Cala zawartosc postu */
+@media (min-width: 290px) and (max-width: 999px) {
+        /* Zawartosc naglowka artykulu kontekstu  */
+        .page-header {
+            margin: 0px;
+            border-bottom: 0px;
+            padding: 10px;
+            background: #1c0e0e;
+
+        }
+    }
+@media (min-width: 1000px) {
+        /* Zawartosc naglowka artykulu kontekstu  */
+        .page-header {
+            margin: 0px 0px 0px 0px;
+            border-bottom: 0px;
+            padding: 10px;
+            background: #1c0e0e;
+        }
+    }
+
+
+    .entry-content {
+        font-family: Cienka;
+        font-size: 16px;
+        font-weight: normal;
+        color: #c6afaa;
+        background: #0e0707;
+        padding: 20px 0px 20px 0px;
+        margin-top: 0px;
+        border-top: 1px solid #2d1818;
+        border-bottom: 1px solid #2d1818;
+    }
+
+    .entry-title a {
+        margin: 0px;
+        font-family: Cienka;
+        font-size: 30px;
+        color: #c6afaa;
+    }
+    .entry-title a:hover {
+        color: #ee3a15;
+    }
+    .entry-meta {
+        padding: 20px 0px 20px 45px;
+    }
+/*### [11] TRESC WYSWIETLANYCH POSTOW  ################################################################################*/
+@media (min-width: 1000px) {
+    #tresc {
+        width: 1000px;
+        height: auto;
+        margin: 15px auto;
+    }
+    .artykul {
+        padding: 0px;
+        background: #1c0e0e;
+        margin: 10px 0px 0px 0px;
+    }
+    .entry-title {
+        margin: 20px 0px 0px 10px;
+    }
+    .entry-content .btn {
+        margin: 20px 0px 0px 0px;
+        color: #fff;
+    }
+    .col-sm-6 {
+        text-align: justify;
+        padding-left: 20px;
+    }
+    /* Format wyswietlanego oobrazka dodanego do strony */
+    .thumbnail0, .thumbnail1 {
+        display: block;
+        margin-bottom: 20px;
+        line-height: 1.42857143;
+        background: #0e0707;
+        border: 0px solid #ddd;
+        border-radius: 4px;
+        -webkit-transition: border .2s ease-in-out;
+        -o-transition: border .2s ease-in-out;
+        transition: border .2s ease-in-out;
+    }
+    .thumbnail0 {
+        padding: 10px 0px 10px 20px;
+    }
+    .thumbnail1 {
+        padding: 10px 20px 10px 0px;
+    }
+}
+@media (min-width: 290px) and (max-width: 999px) {
+    #tresc {
+        width: 100%;
+        height: auto;
+    }
+
+    .artykul {
+        padding: 0px;
+        background: #1c0e0e;
+        margin: 10px 0px 0px 0px;
+    }
+    .entry-title {
+        margin: 20px 0px 0px 10px;
+    }
+    .entry-content .btn {
+        margin: 20px 0px 0px 0px;
+        color: #fff;
+    }
+    .col-sm-6 {
+        text-align: justify;
+        padding: 0px 15px 0px 15px;
+    }
+    /* Format wyswietlanego oobrazka dodanego do strony */
+    .thumbnail0, .thumbnail1 {
+        height: auto;
+        max-width: 100%;
+        display: block;
+        padding: 17px;
+        margin-bottom: 0px;
+        line-height: 1.42857143;
+        background: #0e0707;
+        border: 0px solid #ddd;
+        border-radius: 4px;
+        -webkit-transition: border .2s ease-in-out;
+        -o-transition: border .2s ease-in-out;
+        transition: border .2s ease-in-out;
+    }
+}
+/*### [12] STYLE DLA FORMULARZA SEARCH()  ################################################################################*/
+@media (min-width: 1000px) {
+    /*
+    .form-group{
+        width: 1000px;
+        margin: 0px auto;
+        height: 1px;
+        position: relative;
+        z-index: 4000;
+    }
+    .input-group {
+        width: 300px;
+        margin: -600px 10px 0px 0px;
+        position: absolute;
+
+
+    }
+    */
+}
+/*### [13] STYLE DLA FOOTER  ##########################################################################################*/
+    /* Styl glowny dla stopki - cala stopka */
+    #footer-area {
+        background: #1c0e0e;
+        color: #c6af87;
+        padding: 20px 0px 0px 0px;
+        height: auto;
+    }
+    #footer-area .footer-widget-area {
+        padding: 20px 0px 0px 0px;
+    }
+    @media (min-width: 1000px) {
+        /* Wewnetrzna czesc footer*/
+        #footer-area .footer-inner{
+            width: 1000px;
+            margin: 0px auto;
+        }
+        /* Style dla trzech kolumn stopki */
+        #footer-area .footer-kolumna1 {
+            width: 325px;
+            float: left;
+            padding-top: 20px;
+        }
+        #footer-area .footer-kolumna2 {
+            width: 250px;
+            float: left;
+            padding-top: 20px;
+        }
+        #footer-area .footer-kolumna3 {
+            width: 420px;
+            float: left;
+        }
+    }
+    @media (min-width: 600px) and (max-width: 999px) {
+        /* Wewnetrzna czesc footer*/
+        #footer-area .footer-inner{
+            width: 100%;
+            margin: 0px auto;
+        }
+        /* Style dla trzech kolumn stopki */
+        #footer-area .footer-kolumna1 {
+            width: 325px;
+            float: left;
+            padding: 20px 0px 0px 20px;
+        }
+        #footer-area .footer-kolumna2 {
+            width: 250px;
+            float: left;
+            padding: 20px 0px 0px 20px;
+        }
+        #footer-area .footer-kolumna3 {
+            width: 420px;
+            float: left;
+        }
+    }
+    @media (min-width: 290px) and (max-width: 599px) {
+        /* Wewnetrzna czesc footer*/
+        #footer-area .footer-inner{
+            width: 100%;
+            margin: 0px auto;
+        }
+        /* Style dla trzech kolumn stopki */
+        #footer-area .footer-kolumna1 {
+            width: 100%;
+            float: left;
+            padding: 20px 0px 0px 20px;
+        }
+        #footer-area .footer-kolumna2 {
+            width: 100%;
+            float: left;
+            padding: 20px 0px 0px 20px;
+        }
+        #footer-area .footer-kolumna3 {
+            width: 100%;
+            float: left;
+        }
+    }
+
+        #footer-area .col-sm-6 {
+            padding-left: 20px;
+        }
+
+        #footer-area .koniec-tresci{
+            clear: both;
+        }
+        /* Style dla lewej czesci stopki */
+        .footer-widget {
+            width: 100%;
+            float: none;
+        }
+    @media (min-width: 450px) {
+        /* Style dla formularza wyszukiwanie */
+        #s {
+            margin: 0px 10px 0px 0px;
+            color: #8C726C;
+            font-size: 14px;
+        }
+        /* Style dla pola typu select - wyszukiwarka */
+        #searchform_cat {
+            width: 150px;
+            padding: 7px;
+            height: 36px;
+            margin: 0px 10px 0px 0px;
+            color: #8C726C;
+            font-size: 14px;
+        }
+        /* Przyciska wyszukiwarki */
+        #searchsubmit {
+            height: 32px;
+            margin: 0px;
+            color: #c6afaa;
+        }
+    }
+    @media (min-width: 290px) and (max-width: 449px) {
+        #s {
+            margin: 10px 10px 0px 0px;
+            color: #8C726C;
+            font-size: 14px;
+            display: block;
+            width: 268px;
+        }
+        /* Style dla pola typu select - wyszukiwarka */
+        #searchform_cat {
+            padding: 7px;
+            height: 36px;
+            margin: 10px 10px 0px 0px;
+            color: #8C726C;
+            font-size: 14px;
+            display: block;
+            width: 268px;
+        }
+        /* Przyciska wyszukiwarki */
+        #searchsubmit {
+            height: 32px;
+            margin: 0px;
+            color: #c6afaa;
+            margin: 10px 10px 0px 0px;
+            display: block;
+             width: 268px;
+        }
+    }
+    /* Styl dla naglowka elementow footer */
+    #footer-area .widgettitle {
+        font-family: Cienka;
+        font-size: 19px;
+        color: #ad9e9a;
+    }
+    /* Styl dla listy najnowszych elementow */
+    #footer-area .najnowsze .wpisy {
+        padding-top: 7px;
+    }
+    #footer-area .najnowsze .icon {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #c4462d;
+        padding-left: 10px;
+    }
+    #footer-area .najnowsze .icon1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+        color: #c4462d;
+        padding-left: 10px;
+    }
+    #footer-area .najnowsze .wpisy a {
+        font-family: Cienka;
+        font-size: 16px;
+        color: #8C726C;
+    }
+    #footer-area .najnowsze .wpisy a:hover {
+        color:#c4462d;
+    }
+    #footer-kontakt {
+        padding: 10px;
+    }
+    #footer-kontakt .icon {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #c4462d;
+    }
+    #footer-kontakt .kontakt {
+        font-family: Cienka;
+        font-size: 16px;
+        color: #8C726C;
+    }
+    #maccom {
+        background: #0e0707;
+        width: 100%;
+        height: 60px;
+        font-family: Cienka;
+        font-size: 14px;
+        color: #8C726C;
+        text-align: center;
+        line-height: 60px;
+    }
+/*### [14] FORMAT FORMULARZY ##########################################################################################*/
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"] {
+        background: #0e0707;
+        border: 0px;
+        border-radius: 0px;
+        padding: 7px;
+        font-family: Cienka;
+        font-size: 16px;
+        color: #c6afaa;
+        border-radius: 5px;
+    }
+    select {
+        background: #0e0707;
+        border: 0px;
+        border-radius: 0px;
+        padding: 7px;
+        font-family: Cienka;
+        font-size: 16px;
+         color: #c6afaa;
+        border-radius: 5px;
+    }
+/*### [15] STYLE DLA STRONY OFERTA ####################################################################################*/
+    /* Obrazek dla oferty - domyslnie medium */
+    #oferta-strona .koniec-tresci{
+            clear: both;
+        }
+    @media (min-width: 1000px) {
+        /* wyglad calej sekcji wygladu strony */
+        #oferta-strona {
+            font-family: Cienka;
+            font-size: 16px;
+            font-weight: normal;
+            color: #c6afaa;
+            background: #0e0707;
+            width: 1000px;
+            height: auto;
+            padding: 0px 0px 30px 18px;
+            margin: 20px 0px 20px 0px;
+        }
+        /* pojedynczy element oferty */
+        .oferta-obiekt {
+            width: 300px;
+            float: left;
+            margin:10px;
+            background: #140a0a;
+            padding: 20px 0px 20px 0px;
+            -webkit-transition: all 300ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+        }
+        .oferta-obiekt:hover{
+            background: #3c191a;
+            -webkit-transition: all 300ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+        }
+    }
+    @media (min-width: 650px) and (max-width: 999px) {
+        /* wyglad calej sekcji wygladu strony */
+        #oferta-strona {
+            font-family: Cienka;
+            font-size: 16px;
+            font-weight: normal;
+            color: #c6afaa;
+            background: #0e0707;
+            width: 100%;
+            height: auto;
+            padding: 0px 0px 30px 18px;
+            margin: 20px 0px 20px 0px;
+        }
+        /* pojedynczy element oferty */
+        .oferta-obiekt {
+            width: 300px;
+            float: left;
+            margin:10px;
+            background: #140a0a;
+            padding: 20px 0px 20px 0px;
+            -webkit-transition: all 300ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+            text-align: center;
+        }
+        .oferta-obiekt:hover{
+            background: #3c191a;
+            -webkit-transition: all 300ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+        }
+    }
+    @media (min-width: 290px) and (max-width: 649px) {
+        /* wyglad calej sekcji wygladu strony */
+        #oferta-strona {
+            font-family: Cienka;
+            font-size: 16px;
+            font-weight: normal;
+            color: #c6afaa;
+            background: #0e0707;
+            width: 100%;
+            height: auto;
+            padding: 0px 0px 30px 0px;
+            margin: 20px 0px 20px 0px;
+        }
+
+        /* pojedynczy element oferty */
+        .oferta-obiekt {
+            width: 100%;
+            float: left;
+            margin:0px;
+            background: #140a0a;
+            padding: 20px 0px 20px 0px;
+            -webkit-transition: all 300ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+        }
+        .oferta-obiekt:hover{
+            background: #3c191a;
+            -webkit-transition: all 300ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+        }
+    }
+    /* pojedynczy element oferty */
+
+    .oferta-img {
+        width: 300px;
+        height: 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    .oferta-obiekt h3 {
+        padding: 0px 0px 0px 70px;
+        margin: 10px;
+        font-family: Cienka;
+        font-size: 25px;
+        color: #fff;
+    }
+    .oferta-info0, .oferta-info1  {
+        margin: 0px 0px 0px 70px;
+        font-family: Cienka;
+        font-size: 14px;
+        color: #c6afaa;
+    }
+    .oferta-info2  {
+        margin: 2px 0px 0px 70px;
+        font-family: Pogrubiona;
+        font-size: 20px;
+        color: #f63912;
+    }
+     #oferta-strona h2 {
+        padding: 28px 0px 0px 10px;
+        font-family: Cienka;
+        font-size: 28px;
+        color: #c6afaa;
+    }
+     #oferta-strona h2:hover {
+        color: #f63912;
+    }
+     #oferta-strona .ofertaText {
+        padding: 0px 0px 0px 10px;
+        font-size: 16px;
+        color: #c6afaa;
+    }
+/*### [16] STYLE DLA STRONY SINGLE ####################################################################################*/
+    /* Dane dla strony SINGLE */
+    .col-md-8 {
+        width: 100%;
+        padding: 20px;
+    }
+    .strona-single {
+        padding: 20px;
+        text-align: justify;
+    }
+    /* Style dla tekstow oferty */
+    .single-opis  {
+        #margin: 0px 0px 0px 70px;
+        font-family: Cienka;
+        font-size: 18px;
+        color: #c6afaa;
+    }
+    .single-tekst  {
+        margin: 30px 0px 30px 0px;
+        font-family: Cienka;
+        font-size: 18px;
+        color: #c6afaa;
+    }
+    .single-wyr  {
+        #margin: 2px 0px 0px 70px;
+        font-family: Pogrubiona;
+        font-size: 20px;
+        color: #f63912;
+    }
+    /* Style dla obrazków */
+    .thumbnail {
+        display: block;
+        float: none;
+        padding: 20px 20px 20px 20px;
+        margin: 0px;
+        background: #130909;
+        border: 0px;
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+    }
+    .thumbnail:hover {
+        background: #2b1313;
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+    }
+    .strona-single p {
+        margin: 0 0 30px;
+    }
+    .przerwa {
+        clear: both;
+        width:100%;
+        height: 20px;
+    }
+    /* Obszar nawigacji pod postem single */
+    .site-main [class*="navigation"] {
+        margin: 0px;
+        overflow: hidden;
+        padding: 10px 0px 0px 20px;
+    }
+    [class*="navigation"] .nav-next,
+    [class*="navigation"] .nav-previous {
+        float: left;
+
+    }
+    .site-main [class*="navigation"] a,
+    .site-main [class*="navigation"] .nav-previous a {
+        padding: 5px 9px 5px 9px;
+        text-align: center;
+        background: #372424;
+        font-family: Cienka;
+        font-size: 16px;
+        color: #c6afaa;
+        margin: 10px 3px 10px 3px;
+        border: 0px;
+        border-radius: 0px;
+    }
+    .site-main [class*="navigation"] a:hover,
+    .site-main [class*="navigation"] .nav-previous a:hover {
+        background: #c4462d;
+        color: #fff;
+    }
+/*### [17] STYLE DLA PAGINACJI STRONY  ################################################################################*/
+    .paginacja {
+        margin: 10px 0px 10px 20px;
+    }
+    .page-numbers {
+        padding: 5px 9px 5px 9px;
+        text-align: center;
+        background: #372424;
+        font-family: Cienka;
+        font-size: 16px;
+        color: #c6afaa;
+        margin: 10px 3px 10px 3px;
+    }
+    .page-numbers:hover {
+        background: #c4462d;
+        color: #fff;
+    }
+    .next, .prev{
+        padding: 4px 9px 4px 9px;
+        background: #3f2a2a;
+    }
+    .current{
+        padding: 4px 9px 4px 9px;
+        font-weight: bold;
+        background: #91210b;
+        color: #fff;
+    }
+/*### [18] STYLE DLA GALERII OFERTY  ##################################################################################*/
+    .slideshow {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        display: inline-block;
+    }
+    /* Sposob wyswietlania galerii */
+    .slideshow li {
+        float: left;
+    }
+    /* Kolor tla Lightbox */
+    .lb-outerContainer {
+        background-color: #221313;
+        border-radius: 5px;
+        #border: 7px solid #0e0707;
+    }
+    .slideshow .thumbnail {
+        display: block;
+        float: none;
+        padding: 10px 10px 10px 10px;
+        margin: 0px;
+        background: #130909;
+        border: 0px;
+        margin: 10px 10px 10px 0px;
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+    }
+    .slideshow .thumbnail:hover {
+        background: #2b1313;
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+    }
+    /* Sposob wyswietlania obrazkow galerii duzej */
+    .site-main .gallery a img {
+        border: 0px;
+        height: auto;
+        max-width: 100%;
+    }
+/*### [18] CHMURA TAGOW  ##############################################################################################*/
+   #footer-area a {
+        color: #8C726C;
+    }
+
+
+
+
+
+
